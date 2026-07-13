@@ -1,0 +1,684 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #FFF8FB,
+        #FDF2F8,
+        #FCE7F3,
+        #FFF8FB
+    );
+
+    color:#5F5F5F;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+
+    background:linear-gradient(
+        90deg,
+        #F8D7DA,
+        #FBCFE8,
+        #F8D7DA
+    );
+
+    padding:20px 8%;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+.container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+header h1{
+
+    color:#8C5E7A;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#8C5E7A;
+
+    margin-left:25px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:#E295B5;
+
+}
+
+
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:80px 10%;
+
+    flex-wrap:wrap;
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+
+
+.hero-text{
+
+    max-width:550px;
+
+}
+
+
+
+.hero-text h2{
+
+    font-size:48px;
+
+    color:#B56576;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero-text p{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+
+
+/* Profile Image */
+
+.hero-image img{
+
+    width:320px;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+
+
+/* ===========================
+   Animations
+=========================== */
+
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ===========================
+   Button
+=========================== */
+
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:13px 28px;
+
+    background:#E8A0BF;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:#D97A9E;
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:0 10px 20px rgba(232,160,191,.4);
+
+}
+
+
+
+/* ===========================
+   General Sections
+=========================== */
+
+
+section{
+
+    padding:70px 10%;
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+
+    color:#B56576;
+
+    margin-bottom:35px;
+
+    font-size:36px;
+
+}
+
+
+
+/* ===========================
+   About Preview
+=========================== */
+
+
+.about-preview{
+
+    width:85%;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+
+
+.about-preview p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:18px;
+
+}
+
+
+
+/* ===========================
+   Skills Cards
+=========================== */
+
+
+.skills{
+
+    background:#FFF2F6;
+
+}
+
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+
+
+.card{
+
+    width:280px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+.card h3{
+
+    color:#C06C84;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+
+.card p{
+
+    margin:8px 0;
+
+}
+
+
+
+/* ===========================
+   Goals
+=========================== */
+
+
+.goals{
+
+    background:#FFEFF5;
+
+    border-radius:25px;
+
+    width:85%;
+
+    margin:60px auto;
+
+    text-align:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+}
+
+
+
+.goals p{
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+
+
+/* ===========================
+   Quote
+=========================== */
+
+
+.quote{
+
+    width:85%;
+
+    margin:50px auto;
+
+    padding:50px;
+
+    text-align:center;
+
+    background:#FFEFF5;
+
+    border-radius:25px;
+
+}
+
+
+
+.quote p{
+
+    font-size:22px;
+
+    font-style:italic;
+
+    color:#B56576;
+
+}
+
+
+
+/* ===========================
+   About Page
+=========================== */
+
+
+.about-page{
+
+    width:85%;
+
+    max-width:950px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+
+
+.about-page h2{
+
+    color:#B56576;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-page p{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-page ul{
+
+    margin-left:25px;
+
+}
+
+
+
+.about-page li{
+
+    margin-bottom:12px;
+
+}
+
+
+
+/* ===========================
+   Footer
+=========================== */
+
+
+footer{
+
+    background:#F8D7DA;
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:60px;
+
+    color:#6D6875;
+
+}
+
+
+
+footer h2{
+
+    margin-bottom:10px;
+
+}
+
+
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+
+
+/* ===========================
+   Mobile Responsive
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+
+
+.hero-text h2{
+
+    font-size:38px;
+
+}
+
+
+
+.hero-image img{
+
+    width:250px;
+
+    height:250px;
+
+}
+
+
+
+.cards{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.card{
+
+    width:90%;
+
+}
+
+
+
+.about-page,
+.about-preview,
+.quote{
+
+    width:92%;
+
+}
+
+
+
+header{
+
+    padding:15px 5%;
+
+}
+
+
+
+.container{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+nav a{
+
+    margin:0 12px;
+
+}
+
+
+}
